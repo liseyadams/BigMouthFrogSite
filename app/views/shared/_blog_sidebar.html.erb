@@ -3,13 +3,20 @@
     <h4>About Me</h4>
     <p>I am a Junior Developer.</p>
     </div>
+    
+  <div class="sidebar-module">
+      <h4>Topics</h4>
+      <% @side_bar_topics.each do |topic| %>
+        <p><%= link_to topic.title, topic_path(topic) %></p>
+      <% end %>
+  </div>
 
   <div class="sidebar-module">
     <h4>Social Media</h4>
     <ol class="list-unstyled social-links">
       <li><a href= "#"><%= fa_icon "github" %></a></li>
       <li><a href= "#"><%= fa_icon "twitter" %></a></li>
-      <li><a href= "#"><%= fa_icon "facebook" %></a></li>
+      <li><a href= "#"><%= fa_icon "facebook-square" %></a></li>
       <li><a href= "#"><%= fa_icon "instagram" %></a></li>
     </ol>
   </div>
