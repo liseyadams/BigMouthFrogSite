@@ -19,3 +19,8 @@
 # I don't want to show my secrets
 /config/secrets.yml
 .env
+
+#weird things
+../Rails/Overtime/Overtime
+../Tic-Tac-Toe/tic_tac_toe
+./
